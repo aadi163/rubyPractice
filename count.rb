@@ -1,13 +1,14 @@
 class Count
   def cnt 
-    arr = [1,3,4,2,4]
+    arr = [1,8,3,4,2,4,4,2]
     h = Hash.new
+    
     arr.each do |v|
      count=0
      arr.each do |x|
         if(v==x)
         count += 1
-        h[x]=count
+        h[v]=count
         end
       end
     end
